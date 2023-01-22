@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Skin Effect Solar Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,100&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/SkinEffect_Logo_A39-removebg-preview.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="bi bi-x-square" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></a></li>
+                        <li><a href="about.html">ABOUT</a></a></li>
+                        <li><a href="products.html">PRODUCTS</a></a></li>
+                        <li><a href="services.html">SERVICES</a></a></li>
+                        <li><a href="contact.html">CONTACT</a></a></li>
+                    </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+            
+        </nav>
+    <div class="text-box">
+     <h1> Our Products </h1>
+   </section>
+
+<!-----------------Our Products Content---------------->
+<section class="Products">
+    <h1> Products</h1>
+    <p>We offer the quality components to build your solar system.</p>
+    <div class="row">
+        <div class="product-col">
+            <h3>Hybrid Solar System</h3>
+            <p>Hybrid Solar System is the term that referes to systems that use both the suns clean power and the municipal (grid) power to operate. Batteries are charged using either the suns clean power or the grid, then batteries supply the load (household) with power in the case of loadshedding (zero-grid power).</p>
+        </div>
+        <div class="product-col">
+            <h3>Off-grid Solar System</h3>
+            <p>Off-grid solar system is the term that referes to systems that do not require municipal (grid) power to operate. Source of the power comes from batteries, where batteries are charged by Solar pannels or a generator. They do not need the grip to operate.</p>
+        </div>
+        <div class="product-col">
+            <h3>Grid-tied Solar System</h3>
+            <p>Grid-tied solar systems require municipal (grid) power to operate. Source of the power comes solar pannels, the grid (municipality) and from batteries. The systems may or may not have batteries attatched to them, operating with solar pannels directly as they harness the suns clean energy and convert it directly into usable power. These systems are generally used for reducing the carbon footprint of companies or households and cannot be used as a back-up power option. "Clean power","Additional power"</p>
+        </div>
+    </div>
+</section>
+
+<!-----------------Footer---------------->
+
+<section class="footer">
+    <h4> About Us</h4>
+    <p>As a proudly South African business our focus is on you the customer, your experience, and the customer journey. 
+    <br> We actively seek to satisfy your requirements; we have a breadth of technical and product knowledge and can advise on the best systems for your home.
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i> 
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+
+    </div>
+</section>
+
+<!-- -----------JavaScript for Toggle Menue function---------------- -->
+
+   <script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+   </script>
+</body>
+
+</html>
