@@ -11,14 +11,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!-- <img src="https://img.icons8.com/ios/50/null/close-window--v1.png"/>
+    <img src="https://img.icons8.com/ios/50/null/menu-squared-2.png"/> -->
 </head>
 
 <body>
    <section class="header">
         <nav>
-            <a href="index.html"><img src="Images/SkinEffect_Logo_A39-removebg-preview.png"></a>
-            <div class="nav-links" id="navLinks" style="right: -200px;"> 
-                <i class="bi bi-x-square" onclick="hideMenu()"></i>
+            <a href="index.html" id="logo"><img src="Images/SkinEffect_Logo_A39-removebg-preview.png"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <!-- <i class="bi bi-x-square" onclick="hideMenu()"></i> -->
                     <ul>
                         <li><a href="index.html">HOME</a></a></li>
                         <li><a href="about.html">ABOUT</a></a></li>
@@ -27,7 +31,8 @@
                         <li><a href="contact.html">CONTACT</a></a></li>
                     </ul>
             </div>
-            <i class="bi bi-list" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+            <!-- <i class="bi bi-list" onclick="showMenu()"></i> -->
             
         </nav>
     <div class="text-box">
