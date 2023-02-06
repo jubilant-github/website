@@ -86,7 +86,22 @@ nav img{
 nav .bi{
     display: none;
 }
-@media(max-width:700px){
+
+nav .fa{
+    display: none;
+}
+@media only screen and (max-width:667px){
+    nav img{
+        width: 300px;
+        left: 0;
+    }
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
     .text-box h1{
         font-size: 20px; 
     }
@@ -94,7 +109,7 @@ nav .bi{
         display: block;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: #f44336;
         height: 100vh;
         width: 200px;
@@ -102,21 +117,36 @@ nav .bi{
         right: -200px;
         text-align: left;
         z-index: 2;
+        overflow: hidden;
         transition: 1s;
     }
    
-    nav .bi{
+    .bi-list{
         display: block;
         color: #fff;
+       
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
+        /* right: 10px; */
     }
     .nav-links ul{
-        padding: 50px;
+        padding: 30px;
 
     }
+
+    nav .fa{
+        display: block;
+        color: #fff; 
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+
 }
+
+/*-----------------Smaller Sceens-----------------*/
 
 /* -------------Products----------- */
 .Products{
