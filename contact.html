@@ -49,20 +49,37 @@
             <div>
                 <i class="fa fa-envelope-o"></i>
                 <span>
-                    <h5>maabanejubilant6@gmail.com</h5>
+                    <h5>info@sesolarsolutions.co.za</h5>
                     <p>Email us your query </p>
                 </span>
             </div>
         </div>
         <div class="contact-col">
-            <form action="form-handler.php" method="post">
-                <input type="text" name="name2" placeholder="Enter Your Name" required>
-                <input type="email" name="email" placeholder="Enter Your Email Address" required>
-                <input type="text" name="subject" placeholder="Enter Your Subject" required>
-                <textarea  rows="8" name="message" placeholder="Message" required></textarea>
+            <form onsubmit="sendEmail(); reset();return false;">
+                <input type="text" id="name_field" placeholder="Enter Your Name Please" required>
+                <input type="email" id="email" placeholder="Enter Your Email Address" required>
+                <input type="text" id="subject" placeholder="Enter Your Subject" required>
+                <textarea  rows="8" id="message" placeholder="Message" required></textarea>
                 <button type="submit" class="hero-btn red-btn">Send Message</button>  
             </form>
         </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "maabanejubilant6@gmail.com",
+                    Password : "609345@Swelihle",
+                    To : 'jubilant.github@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "Solar Solutions Enquiry",
+                    Body : "And this is the body"
+                }).then(
+                  message => alert(message)
+                );
+            }
+        </script>
+
 
     </div>
 </section>
